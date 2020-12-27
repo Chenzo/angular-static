@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import * as coreData from '.lsata.json';
+import * as coreData from '../assets/data.json';
 
 @Component({
   selector: 'app-root',
