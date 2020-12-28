@@ -1,3 +1,8 @@
-<div>Vince Was here</div>
+<h2>{{ title }}</h2>
 
-{{ title }}
+
+
+<p>    Are we getting the data:</p>
+<div *ngFor="let page of siteData; let i =index">
+    Page Name:     {{ page.name }}
+</div>

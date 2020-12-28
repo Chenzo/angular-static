@@ -1,12 +1,21 @@
 import { Component } from '@angular/core';
-import * as coreData from '../assets/data.json';
+import { dataService } from './shared/data.service';
+
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
+  providers: [dataService]
 })
 export class AppComponent {
   title = 'angular-static';
-  coreData = coreData;
+  siteData = [];
+
+  constructor(private dataService: dataService) {}
+
+
+  ngOnInit() {
+    this.siteData = this.dataService.siteData;
+  }
 }
