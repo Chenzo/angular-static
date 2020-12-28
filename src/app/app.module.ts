@@ -9,10 +9,22 @@ import { HomeComponent } from './home/home.component';
 import { RouterModule, Routes } from '@angular/router';
 import { PageoneComponent } from './pageone/pageone.component';
 import { PagetwoComponent } from './pagetwo/pagetwo.component';
+import { ProductpageComponent } from './productpage/productpage.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent},
   { path: 'pageone', component: PageoneComponent},
+  { path: 'pagetwo', component: PagetwoComponent},
+  {
+    path: 'product', 
+    component: ProductpageComponent,
+    children: [
+      {
+        path: ':productID',
+        component: ProductpageComponent
+      }
+    ]
+  }
 ]
 
 @NgModule({
@@ -21,7 +33,8 @@ const appRoutes: Routes = [
     HeaderComponent,
     HomeComponent,
     PageoneComponent,
-    PagetwoComponent
+    PagetwoComponent,
+    ProductpageComponent
   ],
   imports: [
     BrowserModule,

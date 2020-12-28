@@ -3,5 +3,5 @@
 
 <p>    Are we getting the data:</p>
 <div *ngFor="let page of siteData; let i =index">
-    Page Name:     {{ page.name }}
+    Page Name:    <a routerLink="/product/{{page.guid}}">{{page.guid}} -  {{ page.name }} </a>
 </div>
