@@ -1,8 +1,5 @@
+<app-header></app-header>
+
 <h2>{{ title }}</h2>
 
-
-
-<p>    Are we getting the data:</p>
-<div *ngFor="let page of siteData; let i =index">
-    Page Name:     {{ page.name }}
-</div>
+<router-outlet></router-outlet>
