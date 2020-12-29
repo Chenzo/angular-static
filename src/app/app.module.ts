@@ -18,12 +18,16 @@ const appRoutes: Routes = [
   {
     path: 'product', 
     component: ProductpageComponent,
-    children: [
+    /* children: [
       {
         path: ':productID',
         component: ProductpageComponent
       }
-    ]
+    ] */
+  },
+  {
+    path: 'product/:productID', 
+    component: ProductpageComponent,
   }
 ]
 

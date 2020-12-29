@@ -11,6 +11,12 @@ export class ProductpageComponent implements OnInit {
 
   siteData = [];
   myID = 123;
+  myProductData:any = {}
+
+  myName = "";
+  myImage = "";
+  myDescription = "";
+  myPrice = "";
 
   constructor(public router:Router,
               private route: ActivatedRoute,
@@ -18,7 +24,16 @@ export class ProductpageComponent implements OnInit {
 
 
   ngOnInit(): void {
-    this.myID = this.route.params['productID'];
+    this.myID = this.route.snapshot.params['productID'];
+    this.siteData = this.dataService.siteData;
+    this.myProductData = this.siteData[this.myID - 1];
+
+    this.myName = this.myProductData.name;
+    this.myImage = this.myProductData.imageUrl;
+    this.myPrice = this.myProductData.price;
+    this.myDescription = this.myProductData.description;
+
+    console.log(this.siteData[this.myID - 1]);
   }
 
 }
