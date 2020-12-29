@@ -9,7 +9,11 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "scully": "scully",
-    "scully:serve": "scully serve"
+    "static": "npm run scully -- --scanRoutes",
+    "scully:serve": "scully serve",
+    "fbl": "firebase login",
+    "fbi": "firebase init",
+    "deploy": "firebase deploy"
   },
   "private": true,
   "dependencies": {
@@ -24,6 +28,7 @@
     "@scullyio/init": "^1.0.1",
     "@scullyio/ng-lib": "^1.0.0",
     "@scullyio/scully": "^1.0.0",
+    "firebase-tools": "^9.1.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.2"
