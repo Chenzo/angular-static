@@ -10,6 +10,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { PageoneComponent } from './pageone/pageone.component';
 import { PagetwoComponent } from './pagetwo/pagetwo.component';
 import { ProductpageComponent } from './productpage/productpage.component';
+import { ScullyLibModule } from '@scullyio/ng-lib';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent},
@@ -43,7 +44,8 @@ const appRoutes: Routes = [
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    ScullyLibModule
   ],
   providers: [],
   bootstrap: [AppComponent]
