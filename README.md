@@ -14,3 +14,6 @@ we're using SCULLY to generate the static HTML files from our angular site - htt
   
 `npm run scully -- --scanRoutes` to generate static site
 
+to test new static site: 
+
+`npm run scully:serve` - this will launch a simple local server at "http://localhost:1668/"
