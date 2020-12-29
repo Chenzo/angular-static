@@ -1,1 +1,1 @@
-[{"route":"/"},{"route":"/pageone"},{"route":"/pagetwo"},{"route":"/product"}]
+[{"route":"/"},{"route":"/pageone"},{"route":"/pagetwo"},{"route":"/product"},{"route":"/product/:productID"}]
