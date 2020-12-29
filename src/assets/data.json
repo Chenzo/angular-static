@@ -4,7 +4,7 @@
         "name": "Licensed Frozen Hat",
         "description": "Incidunt et magni est ut.",
         "price": "170.00",
-        "imageUrl": "https://source.unsplash.com/1600x900/?product",
+        "imageUrl": "hat.jpg",
         "quantity": 56840
     },
     {
@@ -12,7 +12,7 @@
         "name": "Rustic Concrete Chicken",
         "description": "Sint libero mollitia.",
         "price": "302.00",
-        "imageUrl": "https://source.unsplash.com/1600x900/?product",
+        "imageUrl": "chicken.jpg",
         "quantity": 9358
     },
     {
@@ -20,7 +20,7 @@
         "name": "Fantastic Metal Computer",
         "description": "In consequuntur cupiditate et unde minus.",
         "price": "279.00",
-        "imageUrl": "https://source.unsplash.com/1600x900/?product",
+        "imageUrl": "computer.jpg",
         "quantity": 90316
     }
 ]
