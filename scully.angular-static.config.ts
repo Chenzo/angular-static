@@ -7,7 +7,8 @@ export const config: ScullyConfig = {
     '/product/:productID': {
       type: 'json',
       productID: {
-        url: 'http://localhost:4200/assets/data.json',
+        url: './src/assets/data.json',
+        //url: 'http://localhost:4200/assets/data.json',
         //resultsHandler: (response) => response.data,
         property: 'guid'
       },
