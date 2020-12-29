@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from  '@angular/router';
 import { dataService } from '../shared/data.service';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-productpage',
   templateUrl: './productpage.component.html',
-  styleUrls: ['./productpage.component.scss']
+  styleUrls: ['./productpage.component.scss'],
 })
 export class ProductpageComponent implements OnInit {
 
@@ -20,7 +21,8 @@ export class ProductpageComponent implements OnInit {
 
   constructor(public router:Router,
               private route: ActivatedRoute,
-              private dataService: dataService) { }
+              private dataService: dataService,
+              private titleService: Title) { }
 
 
   ngOnInit(): void {
@@ -34,6 +36,10 @@ export class ProductpageComponent implements OnInit {
     this.myDescription = this.myProductData.description;
 
     console.log(this.siteData[this.myID - 1]);
+
+
+    this.titleService.setTitle("Product | " + this.myName);
+
   }
 
 }
