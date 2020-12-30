@@ -7,7 +7,7 @@ export const config: ScullyConfig = {
     '/product/:productID': {
       type: 'json',
       productID: {
-        url: 'https://raw.githubusercontent.com/Chenzo/angular-static/main/src/assets/data.json',
+        url: 'http://localhost:8200/assets/data.json',
         //url: 'http://localhost:4200/assets/data.json',
         //resultsHandler: (response) => response.data,
         property: 'guid'
