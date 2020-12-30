@@ -17,3 +17,12 @@ we're using SCULLY to generate the static HTML files from our angular site - htt
 to test new static site: 
 
 `npm run scully:serve` - this will launch a simple local server at "http://localhost:1668/"
+
+
+
+TODO...
+
+solve how to have scully just pull a local file for the routes
+
+
+
